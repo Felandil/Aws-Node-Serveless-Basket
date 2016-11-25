@@ -1,0 +1,11 @@
+service: felandil-basket
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  stage: dev
+  region: eu-west-1
+
+functions:
+  hello:
+    handler: handler.hello
