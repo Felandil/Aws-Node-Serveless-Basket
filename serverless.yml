@@ -8,4 +8,14 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: src/handler.hello
+    events:
+        - http:
+            path: hello
+            method: get
+resources:
+  Resources:
+
+package:
+    exclude:
+        - "node_modules/**"
